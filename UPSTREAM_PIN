@@ -1,0 +1,9 @@
+bucket 1.0.0
+
+container:      https://github.com/apple/container.git @ 1.2.2 (0190097d)
+containerization: https://github.com/apple/containerization.git @ 0.41.0 (5427fd21)
+libarchive:     3.7.7 (static XCFramework, zlib-only)
+
+App Store patches applied:
+- CArchive links LibArchive static XCFramework instead of system libarchive/liblzma/libbz2
+- CAuditToken target removed; XPCServer uses xpc_connection_get_pid + proc_pidinfo
