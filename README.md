@@ -15,9 +15,9 @@ Upstream pins are recorded in [`UPSTREAM_PIN`](UPSTREAM_PIN).
 
 ```
 bucket/
-  Package.swift          # SPM package (products match apple/container)
-  Sources/               # container sources
-  containerization/      # vendored apple/containerization
+  Package.swift          # single SPM manifest (container + containerization + LibArchive)
+  Sources/               # apple/container sources
+  containerization/      # apple/containerization sources (not a nested package)
   LibArchive/            # static libarchive XCFramework + build script
 ```
 

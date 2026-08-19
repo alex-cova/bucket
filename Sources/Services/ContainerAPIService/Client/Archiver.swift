@@ -247,7 +247,7 @@ extension Archiver {
     }
 }
 
-extension WriteEntry: @retroactive Encodable {
+extension WriteEntry: Encodable {
     enum CodingKeys: String, CodingKey {
         case path
         case fileType

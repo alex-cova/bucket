@@ -1519,7 +1519,7 @@ struct MultiWriter: Writer {
     }
 }
 
-extension FileHandle: @retroactive ReaderStream, @retroactive Writer {
+extension FileHandle: ReaderStream, Writer {
     public func write(_ data: Data) throws {
         try self.write(contentsOf: data)
     }
